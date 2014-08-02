@@ -1,0 +1,121 @@
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+body {
+	min-height: 100%;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+	background: grey;
+}
+header {
+	padding:10px;
+	background:black;
+	color: grey;
+}
+header h3 {
+	text-align: center;
+	font-size: 2.5em;
+}
+header p {
+	text-align: center;
+	font-size: 2em;
+}
+.greybox {
+	padding:10px;
+	padding-top:10em;   /* Height of the footer element */
+}
+footer {
+	width:100%;
+	min-height: 118px;
+	background:black;
+}
+header img {
+	position: absolute;
+	height: 100%;
+	width: auto;
+}
+.picture {
+	text-align: center;
+}
+.picture img {
+	max-height: 325px;
+	width: auto;
+}
+.answers {
+	text-align: center;
+	width: 50%;
+	margin: auto;
+	font-size: 1.5em;
+	color: white;
+}
+.answers p {
+	padding: 1em;
+	overflow: auto;
+}
+.answers button {
+	height: 2em;
+	width: 2em;
+}
+.next {
+	display: none;
+	text-align: center;
+	padding: 7em;
+}
+.next button {
+	height: 4em;
+	width: 17em;
+}
+.progressbar {
+	background: grey;
+	border-color: white;
+	border-style: solid;
+	border-width: .4em;
+	height: 3em;
+	width: 38em;
+	margin-top: 2.5em;
+	margin-left: 27%;
+}
+.progressbar img {
+	max-height: 100%;
+	max-width: 100%;
+	padding-left: 3.5em;
+}
+.progress1, .progress2, .progress3, .progress4 {
+	display: none;
+}
+
+@media (max-height: 950px) and (max-width: 1450px) {
+	header h3 {
+		display: none;
+	}
+	.greybox {
+		padding-top: 4em;
+	}
+	.picture {
+		padding: 0;
+	}
+	footer {
+		min-height: 0px;
+	}
+	.progressbar {
+		margin-top: .6em;
+	}
+	.answers p {
+		padding: .25em;
+	}
+}
+
+@media (max-height: 787px), (max-width: 1325px) {
+	.next {
+		padding: 1em;
+	}
+	.next button {
+		height: 3em;
+		width: 16em;
+	}
+}
+*/
