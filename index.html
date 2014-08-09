@@ -1,64 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Quiz App</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="app.js"></script>
-</head>
-<body>
-	<div id="wrapper">
-		<header class="navbar-fixed-top">
-
-			<img src="img/4slogo.jpg">
-
-			<h3>Title</h3>
-
-			<p class="questiontext">1. Question goes here?</p>
-
-		</header>
-		
-		<div class="greybox">
-			
-			<div class="picture">
-				<img class="questionimage" src="img/test.jpeg">
-			</div>
-
-			<div class="answers">
-				<div class="potentialanswers">
-					<p class="answer1">This is answer one.</p>
-					<p class="answer2">This is answer two.</p>
-					<p class="answer3">This is answer three.</p>
-					<p class="answer4">This is answer four.</p>	
-				</div>
-
-				<div class="btn-group btn-group-justified answergroup">
-					<a class="btn btn-default" role="button">A</a>
-					<a class="btn btn-default" role="button">B</a>
-					<a class="btn btn-default" role="button">C</a>
-					<a class="btn btn-default" role="button">D</a>
-				</div>
-	
-			</div>
-
-
-		</div>
-
-		<footer class="navbar-fixed-bottom">
-			
-			<div class="progressbar container-fluid">
-				<img class="progress1" src="img/testsmile.jpg">
-				<img class="progress2" src="img/testsmile.jpg">
-				<img class="progress3" src="img/testsmile.jpg">
-				<img class="progress4" src="img/testsmile.jpg">
-				<img class="progress5" src="img/testsmile.jpg">
-			</div>
-
-		</footer>
-	</div>	
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <title>Quiz App</title>
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <link rel="stylesheet" type="text/css" href="css/reset.css">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <div id="wrapper">
+         <header id="overridebootstraptop" class="navbar-fixed-top">
+            <img src="img/motologo.jpg">
+            <h3>Motorcycle Quiz</h3>
+            <div class="questionsAtTop">
+               <div>
+                  <p class="questiontext">1. Below is the first production motorcycle, the Hildebrand &amp; Wolfmüller. From which country did it originate?</p>
+               </div>
+               <div class="stop">
+                  <p class="questiontext">2. Steering a motorcycle is not always intuitive. If you were making a right turn at high speeds, what would be the process?</p>
+               </div>
+               <div class="stop">
+                  <p class="questiontext">3. In 2004 Ewan McGregor and Charlie Boorman filmed a documentary of their trip circumventing the globe on motorcycles. What style of motorcycles did they ride?</p>
+               </div>
+               <div class="stop">
+                  <p class="questiontext">4. Motorcycles are also renowned for fuel economy. In 1981, Craig Vetter set the world record for fuel economy in combustion engines. What was his fuel economy?</p>
+               </div>
+               <div class="stop">
+                  <p class="questiontext">5. Electric motorcycles are also gaining popularity.<br> The Zero FX gets the equivalent fuel economy of 472 MPGe (0.50 L/100 km), although it still has a low range. <br>Can you guess the price of this bike? </p>
+               </div>
+            </div>
+            <!--questionsAtTop-->
+         </header>
+         <div class="intro">
+            <br>
+            <br>
+            <img class="img-responsive" src="img/mototunnel.gif">
+            <button class="btn btn-danger startbutton">Take a ride</button>
+         </div>
+         <div class="greybox">
+            <div id="quizCarousel" class="carousel slide" data-ride="carousel">
+               <!-- Wrapper for slides -->
+               <div class="carousel-inner">
+                  <div class="item active">
+                     <img src="img/first.jpg" alt="firstbike">
+                  </div>
+                  <div class="item">
+                     <img src="img/countersteer1.jpg" alt="countersteer">
+                  </div>
+                  <div class="item">
+                     <img src="img/adventure.jpg" alt="bmwbikes">
+                  </div>
+                  <div class="item">
+                     <img src="img/vetter.jpg" alt="vetter">
+                  </div>
+                  <div class="item">
+                     <img src="img/zero.jpg">
+                  </div>
+               </div>
+            </div>
+            <!--carousel-->
+            <div class="potentialanswers">
+               <div class="question1">
+                  <p>A. Germany</p>
+                  <p>B. Austria</p>
+                  <p>C. UK</p>
+                  <p>D. Ottoman Empire</p>
+               </div>
+               <div class="question2 stop">
+                  <p>A. Look, push left handlebar, turn.</p>
+                  <p>B. Look, lean left with body, turn.</p>
+                  <p>C. Look, push right handlebar, turn.</p>
+                  <p>D. Look, lean right with body, turn..</p>
+               </div>
+               <div class="question3 stop">
+                  <p>A. Cruiser</p>
+                  <p>B. Adventure Touring</p>
+                  <p>C. Sport</p>
+                  <p>D. UJM</p>
+               </div>
+               <div class="question4 stop">
+                  <p>A. 470mpg (0.5 L/100km)</p>
+                  <p>B. 112mpg (2.1 L/100km)</p>
+                  <p>C. 84mpg (2.8 L/100km)</p>
+                  <p>D. 232mpg (1.01 L/100km)</p>
+               </div>
+               <div class="question5 stop">
+                  <p>A. $22,500 (€16 700)</p>
+                  <p>B. $50,000 (€37 200)</p>
+                  <p>C. $37,500 (€28 000)</p>
+                  <p>D. $9500 (€7000)</p>
+               </div>
+            </div>
+            <div class="btn-group btn-group-justified answergroup">
+               <div class="btn-group">
+                  <button id="overridebutton" type="button" class="btn btn-default a1">A</button>
+               </div>
+               <div class="btn-group">
+                  <button id="overridebutton" type="button" class="btn btn-default a2">B</button>
+               </div>
+               <div class="btn-group">
+                  <button id="overridebutton" type="button" class="btn btn-default a3">C</button>
+               </div>
+               <div class="btn-group">
+                  <button id="overridebutton" type="button" class="btn btn-default a4">D</button>
+               </div>
+            </div>
+         </div>
+         <div class="explanation">
+            <div class="correct">
+               <h2> Correct! </h2>
+               <p class="answercorrect"></p>
+            </div>
+            <div class="incorrect">
+               <h2>Wrong!</h2>
+               <p class="answerincorrect"></p>
+            </div>
+         </div>
+         <div class="outro">
+            <h1> The race is over. </h1>
+            <p class="gameover">Game over man, game over!</p>
+            <img src="img/rideoff.gif">
+         </div>
+         <footer id="overridebootstrapbottom" class="navbar-fixed-bottom">
+            <div id="progressoverride" class="progress">
+               <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+               </div>
+            </div>
+            <div class="continuewrapper container-fluid">
+               <button class="btn btn-danger continue">Continue <span class="glyphicon glyphicon-arrow-right"></span></button>
+               <button id="stop" class="btn btn-danger restart">Restart <span class="glyphicon glyphicon-refresh"></span></button>
+            </div>
+         </footer>
+      </div>
+      <script type="text/javascript" src="app.js"></script>
+   </body>
 </html>

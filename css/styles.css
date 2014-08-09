@@ -10,11 +10,29 @@ body {
 	min-height:100%;
 	position:relative;
 	background: grey;
+	border-right-width: 4px;
+	border-right-style: groove;
+	border-right-color: rgba(240, 126, 126, 0.87);
+	border-left-width: 4px;
+	border-left-style: groove;
+	border-left-color: rgba(240, 126, 126, 0.87);
 }
-header {
-	padding:10px;
+#overridebootstraptop {
+	background:black;
+	color: rgba(240, 126, 126, 0.87);
+	border-bottom-color: #F07E7E;
+	border-bottom-style: groove;
+	border-bottom-width: 4px;
+}
+#overridebootstrapbottom {
 	background:black;
 	color: grey;
+	border-top-color: #F07E7E;
+	border-top-style: groove;
+	border-top-width: 4px;
+}
+#overridebootstraptop, #overridebootstrapbottom, .greybox {
+	display: none;
 }
 header h3 {
 	text-align: center;
@@ -22,11 +40,29 @@ header h3 {
 }
 header p {
 	text-align: center;
-	font-size: 2em;
+	font-size: 1em;
+	padding-left: 3em;
+}
+.intro img {
+	margin: auto;
+	border-style: groove;
+	border-width: 2px;
+	border-color: #F07E7E;
+}
+.intro {
+	text-align: center;
+}
+.intro button {
+	width: 30em;
+	height: 4em;
+	margin-top: 10em;
 }
 .greybox {
 	padding:10px;
 	padding-top:10em;   /* Height of the footer element */
+}
+#overridebutton {
+	border-color: #f07e7e;
 }
 footer {
 	width:100%;
@@ -38,56 +74,97 @@ header img {
 	height: 100%;
 	width: auto;
 }
-.picture {
+.explanation {
+	display: none;
 	text-align: center;
+	padding-top: 8em;
+	color: white;
+	font-size: 2em;
+	text-shadow:
+       0px 0px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
 }
-.picture img {
-	max-height: 325px;
-	width: auto;
+.explanation a {
+	text-shadow: none;
 }
-.answers {
+.correct, .incorrect {
+	display: none;
+}
+.carousel-inner img{
+	max-height: 45%;
+	margin: auto;
+}
+#carouselButtons {
+    margin-left: 50%;
+    position: absolute;
+    bottom: 0px;
+}
+.carousel-caption h3 {
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+.carousel-caption p {
+   text-shadow:
+       0px 0px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       0px 0px 0 #000;
+}
+.potentialanswers {
 	text-align: center;
 	width: 50%;
 	margin: auto;
 	font-size: 1.5em;
 	color: white;
+	text-shadow:
+       0px 0px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
 }
-.answers p {
-	padding: 1em;
-	overflow: auto;
+.answergroup.btn-group-justified {
+	margin: auto;
+	width: 50%;
 }
-.answers button {
-	height: 2em;
-	width: 2em;
+#progressoverride {
+	max-width: 50%;
+	margin: auto;
+	margin-top: 1em;
 }
-.next {
+.continuewrapper {
+	text-align: center;
+	display: none;
+	margin-top: 1em;
+}
+#stop, .stop {
+	display: none;
+}
+.outro {
 	display: none;
 	text-align: center;
-	padding: 7em;
+	padding-top: 10em;
 }
-.next button {
-	height: 4em;
-	width: 17em;
+.outro h1, .outro h2 {
+	color: white;
+	text-shadow:
+       0px 0px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
 }
-.progressbar {
-	background: grey;
-	border-color: white;
-	border-style: solid;
-	border-width: .4em;
-	height: 3em;
-	width: 38em;
-	margin-top: 2.5em;
-	margin-left: 27%;
+.gameover {
+	font-size: .6em;
 }
-.progressbar img {
-	max-height: 100%;
-	max-width: 100%;
-	padding-left: 3.5em;
-}
-.progress1, .progress2, .progress3, .progress4 {
-	display: none;
-}
-
 @media (max-height: 950px) and (max-width: 1450px) {
 	header h3 {
 		display: none;
